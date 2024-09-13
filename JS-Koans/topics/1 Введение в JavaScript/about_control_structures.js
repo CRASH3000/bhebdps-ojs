@@ -6,17 +6,17 @@ describe("About Control Structures (about_control_structures.js)", function(){
     }
 
     // what is the value of isPositive?
-    expect(FILL_ME_IN).toBe(isPositive);
+    expect(true).toBe(isPositive); // isPositive should be true
   });
 
   it("for", function() {
     let counter = 10;
     for (let i = 1; i <= 3; i++) {
-      counter = counter + i;
+      counter = counter + i; // counter = 10 + 1 + 2 + 3
     }
 
     // what is the value of counter?
-    expect(FILL_ME_IN).toBe(counter);
+    expect(16).toBe(counter); // counter should be 16
   });
 
   it("for in", function() {
@@ -28,19 +28,19 @@ describe("About Control Structures (about_control_structures.js)", function(){
     let result = "";
     // for in enumerates the property names of an object
     for (let property_name in person) {
-        result = result + property_name;
+        result = result + property_name; // result = "nameage"
     }
 
     // what is the value of result?
-    expect(FILL_ME_IN).toBe(result);
+    expect("nameage").toBe(result); // result should be "nameage"
   });
 
   it("ternary operator", function() {
     let fruit = true ? "apple" : "orange";
-    expect(FILL_ME_IN).toBe(fruit, 'what is the value of fruit?');
+    expect("apple").toBe(fruit, 'what is the value of fruit?');
 
     fruit = false ? "apple" : "orange";
-    expect(FILL_ME_IN).toBe(fruit, 'now what is the value of fruit?');
+    expect("orange").toBe(fruit, 'now what is the value of fruit?');
   });
 
   it("switch", function() {
@@ -50,12 +50,12 @@ describe("About Control Structures (about_control_structures.js)", function(){
         result = 1;
         break;
       case 1+1:
-        result = 2;
+        result = 2; // This case matches
         break;
     }
 
     // what is the value of result?
-    expect(FILL_ME_IN).toBe(result);
+    expect(2).toBe(result); // result should be 2
   });
 
   it("switch default case", function() {
@@ -66,20 +66,20 @@ describe("About Control Structures (about_control_structures.js)", function(){
         break;
       case "s":
         result = "Samwise";
-          break;
+        break;
       default:
-        result = "Merry";
+        result = "Merry"; // This case matches
         break;
     }
 
     // what is the value of result?
-    expect(FILL_ME_IN).toBe(result);
+    expect("Merry").toBe(result); // result should be "Merry"
   });
 
   it("null coalescing", function() {
     let result = null || "a value";
 
     // what is the value of result?
-    expect(FILL_ME_IN).toBe(result);
+    expect("a value").toBe(result); // result should be "a value"
   });
 });
